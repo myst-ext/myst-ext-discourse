@@ -1,0 +1,64 @@
+{
+  "name": "myst-ext-discourse",
+  "version": "1.0.0",
+  "description": "Discourse topic listings in MyST Markdown by Curvenote",
+  "type": "module",
+  "exports": {
+    ".": {
+      "discourse": "./dist/discourse.mjs",
+      "types": "./dist/discourse.d.ts"
+    },
+    "./react": {
+      "default": "./dist/react/index.js",
+      "types": "./dist/react/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:plugin": "tsup",
+    "build:react": "tsc --project tsconfig.react.json",
+    "build": "npm run build:plugin && npm run build:react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myst-ext/myst-ext-discourse.git"
+  },
+  "keywords": [
+    "discourse",
+    "myst markdown",
+    "markdown",
+    "design",
+    "writing"
+  ],
+  "author": "Steve Purves <steve@curvenote.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myst-ext/myst-ext-discourse/issues"
+  },
+  "homepage": "https://github.com/myst-ext/myst-ext-discourse#readme",
+  "devDependencies": {
+    "@jupyterlab/nbformat": "^4.2.3",
+    "@lumino/coreutils": "^2.2.0",
+    "@myst-theme/providers": "^0.9.8",
+    "@scienceicons/react": "^0.0.11",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.400.0",
+    "myst-common": "^1.4.7",
+    "p-limit": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.3.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3",
+    "unist-builder": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0"
+  }
+}
