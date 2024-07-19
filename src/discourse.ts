@@ -22,16 +22,10 @@ const discourseDirective = {
     limit: { type: Number, doc: 'The maximum number of topics to show' },
     pinned: { type: Boolean, doc: 'Whether to show pinned topics' },
   },
-  body: {
-    type: String,
-    doc: 'The body of the footer should contain links in the form of a list with up to 2 nested lists',
-  },
   run(data, vfile, ctx) {
     const url = data.arg;
 
     const modes = ['widget', 'server', 'client'];
-
-    console.log('data', data.options);
 
     const json = {
       category: noBooleans(data.options.category),

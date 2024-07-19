@@ -62,11 +62,28 @@ Then add a `discourse` directives to your page.
 
 ### Directive Usage
 
-**TODO: Options**
+<dl>
+<dt>{arg}</dt>
+<dd>URL of the discourse forum</dd>
+<dt>category</dt>
+<dd>(String) Name of the category to list topics from</dd>
+<dt>mode</dt>
+<dd>(String) The type of widget to display (default: `server`), (values: `widget`, `server`, `client`)/dd>
+<dt>logo</dt>
+<dd>(File) The forum logo</dd>
+<dt>logo-dark</dt>
+<dd>(File) Dark mode version of the forum logo</dd>
+<dt>logo-title</dt>
+<dd>(String) Title of the logo, used as alt text</dd>
+<dt>limit</dt>
+<dd>(Number) The maximum number of topics to show</dd>
+<dt>pinned</dt>
+<dd>(Boolean) Whether to show pinned topics</dd>
+</dl>
 
 ### React Component Usage
 
-**TODO: Docs**
+Methods for installing a bundled renderer are still in development by the MyST Markdown project and Curvenote. In the meantime you can install this package from git (`git+https://github.com/<org>/<repo>.git#<branch>`) and include in your build.
 
 ## Developing
 
