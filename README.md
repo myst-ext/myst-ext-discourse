@@ -68,7 +68,7 @@ Then add a `discourse` directives to your page.
 <dt>category</dt>
 <dd>(String) Name of the category to list topics from</dd>
 <dt>mode</dt>
-<dd>(String) The type of widget to display (default: `server`), (values: `widget`, `server`, `client`)/dd>
+<dd>(String) The type of widget to display (default: `server`), (values: `widget`, `server`, `client`)</dd>
 <dt>logo</dt>
 <dd>(File) The forum logo</dd>
 <dt>logo-dark</dt>
