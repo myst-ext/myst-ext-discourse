@@ -5,7 +5,7 @@ import type { TransformedDiscourseNode } from './types.js';
 import { DiscourseClient } from './DiscourseClient.js';
 
 export const DiscourseRenderer: NodeRenderer = ({ node }: { node: TransformedDiscourseNode }) => {
-  const { mode, url, category, limit, logo, logoDark, logoTitle, data } = node;
+  const { mode, url, category, pinned, limit, logo, logoDark, logoTitle, data } = node;
 
   const { isDark } = useTheme();
   if (mode === 'widget') {
@@ -15,6 +15,7 @@ export const DiscourseRenderer: NodeRenderer = ({ node }: { node: TransformedDis
       <DiscourseClient
         url={url}
         category={category}
+        pinned={pinned}
         limit={limit}
         logo={logo}
         logoDark={logoDark}

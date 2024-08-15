@@ -20,7 +20,7 @@ export function formatDiscourseTopics(
   });
 
   return composed
-    ?.filter((t) => (!opts.pinned ? !t.pinned : true))
+    ?.filter((t) => (opts.pinned ? true : !t.pinned))
     .filter((t) => t.visible && !t.archived)
     .slice(0, opts.limit);
 }
