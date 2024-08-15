@@ -1,6 +1,6 @@
 {
   "name": "myst-ext-discourse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Discourse topic listings in MyST Markdown by Curvenote",
   "type": "module",
   "exports": {
